@@ -1,0 +1,45 @@
+
+.boxBackground {
+    position: relative;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+.roundedContainer {
+    background: linear-gradient(45deg, #13166E, #081A1E);
+    position: relative;
+    border-radius: 45px;
+    
+}
+
+.roundedContainer::before,
+.roundedContainer::after {
+    content: '';
+    z-index: -1;
+    border-radius: 45px;
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,      
+    #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
+        #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff
+    );
+    background-size: 300% 300%;
+    animation: gradient 10s linear infinite;
+}
+
+.roundedContainer::after{
+    filter:blur(80px);
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}

@@ -1,0 +1,19 @@
+.headerButtons {
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to bottom, #823E3E7F, #5454543F);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 1px;
+    color: white;
+
+}
+.headerButtonLeft{
+    border-radius: 0px 0px 0px 60px;
+}
+
+.headerButtonRight{
+    border-radius: 0px 0px 60px 0px;
+}
